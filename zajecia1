@@ -1,0 +1,32 @@
+# 2. Konwerter walut
+# Scenariusz: Tworzysz prostą funkcję do przeliczania walut dla kantoru.
+# Stwórz funkcję przelicz_walute(kwota, kurs) z domyślnym kursem EUR/PLN = 4.32
+
+przelicz_walute = function(kwota, kurs = 4.32) {
+  wynik = kwota * kurs
+  return(wynik)
+}
+
+
+
+# 6. Ocena zdolności kredytowej
+# Scenariusz: Pracujesz w banku i potrzebujesz funkcji, która automatycznie sprawdzi,
+# czy klient może otrzymać kredyt.
+# Funkcja zwraca:
+# - "KREDYT PRZYZNANY" jeśli zadluzenie < 30% dochodu
+# - "WYMAGA WERYFIKACJI" jeśli zadluzenie 30-50% dochodu
+# - "KREDYT ODRZUCONY" jeśli zadluzenie > 50% dochodu
+
+ocena_kredytowa = function(dochod, zadluzenie) {
+  if (zadluzenie < 0.30 * dochod) {
+    decyzja = "KREDYT PRZYZNANY"
+  }
+  else if (zadluzenie <= 0.50 * dochod) {
+    decyzja = "WYMAGA WERYFIKACJI"
+  }
+  else {
+    decyzja = "KREDYT ODRZUCONY"
+  }
+  
+  return(decyzja)
+}
