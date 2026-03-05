@@ -6,8 +6,11 @@ przelicz_walute = function(kwota, kurs = 4.32) {
   wynik = kwota * kurs
   return(wynik)
 }
+# test funkcji:
+print(przelicz_walute(100))		
+print(przelicz_walute(100, 4.50))
 
-#test funkcji:
+
 
 # 6. Ocena zdolności kredytowej
 # Scenariusz: Pracujesz w banku i potrzebujesz funkcji, która automatycznie sprawdzi,
