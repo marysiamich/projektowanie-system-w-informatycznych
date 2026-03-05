@@ -7,7 +7,7 @@ przelicz_walute = function(kwota, kurs = 4.32) {
   return(wynik)
 }
 
-
+#test funkcji:
 
 # 6. Ocena zdolności kredytowej
 # Scenariusz: Pracujesz w banku i potrzebujesz funkcji, która automatycznie sprawdzi,
@@ -30,3 +30,14 @@ ocena_kredytowa = function(dochod, zadluzenie) {
   
   return(decyzja)
 }
+
+# test funkcji:
+# d10000,z2000
+
+print(ocena_kredytowa(10000, 2000)) 	
+
+# d10000,z4000
+print(ocena_kredytowa(10000, 4000))	
+
+# d10000,6000
+print(ocena_kredytowa(10000, 6000))	
